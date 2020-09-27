@@ -1,8 +1,59 @@
 * {
-    background-color: black;
-    
+    background-color: rgb(72, 239, 158);
 }
 
-h1{
-    color: white;
+body {
+    text-align: center;
+    color: black;
+    font-family: 'Mali', cursive;
+    min-height: 100vh;
+}
+
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,
+form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background: white;
+}
+
+form button {
+    color: black;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.todo-place {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fa-check,
+.fa-minus-circle {
+    pointer-events: none;
 }
